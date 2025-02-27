@@ -7,30 +7,45 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
+            padding: 20px;
             background-color: #f4f4f4;
-            color: #333;
+            text-align: center;
         }
         .container {
             max-width: 800px;
-            background: #fff;
+            margin: auto;
+            background: white;
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
         h1, h2 {
-            color: #2c3e50;
+            color: #333;
         }
         .section {
             margin-bottom: 20px;
+            text-align: left;
+        }
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .video-gallery img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .video-gallery img:hover {
+            transform: scale(1.05);
         }
         a {
-            color: #3498db;
             text-decoration: none;
-        }
-        .video-links a {
-            display: block;
-            margin-bottom: 5px;
+            color: blue;
         }
     </style>
 </head>
@@ -38,41 +53,44 @@
     <div class="container">
         <h1>Ram Swaroop Dash</h1>
         <p><strong>Social Media Strategist</strong></p>
-        <p>Email: <a href="mailto:swaroopdash357@gmail.com">swaroopdash357@gmail.com</a></p>
-        <p>Phone: 08249108520</p>
-        <p>Website: <a href="https://foodcolumnist.wordpress.com/" target="_blank">foodcolumnist.wordpress.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ramswaroopdash/" target="_blank">linkedin.com/in/ramswaroopdash</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/food_columnist_/" target="_blank">instagram.com/food_columnist_/</a></p>
+        <p><strong>Email:</strong> <a href="mailto:swaroopdash357@gmail.com">swaroopdash357@gmail.com</a></p>
+        <p><strong>Phone:</strong> 08249108520</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ramswaroopdash/" target="_blank">Profile</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/food_columnist_/" target="_blank">Profile</a></p>
+        <p><strong>Website:</strong> <a href="https://foodcolumnist.wordpress.com/" target="_blank">Portfolio</a></p>
         
         <div class="section">
             <h2>Experience</h2>
-            <p><strong>ODM Educational Group</strong> - Social Media Executive (Dec 2023 - Present)</p>
-            <p>Responsible for organic growth, innovative content, trend analysis, and performance monitoring.</p>
+            <p><strong>Social Media Executive - ODM Educational Group</strong> (Dec 2023 - Present)</p>
+            <p>Developing organic growth strategies, engaging content, and performance monitoring.</p>
             
-            <p><strong>Limeli8</strong> - Brand Communication & Digital Marketing Executive (Jun 2023 - Dec 2023)</p>
-            <p>Handled digital strategy, content creation, and multi-channel marketing.</p>
+            <p><strong>Brand Communication & Digital Marketing - Limeli8</strong> (Jun 2023 - Dec 2023)</p>
+            <p>Managed digital strategy, content creation, and multi-channel marketing.</p>
         </div>
         
         <div class="section">
             <h2>Skills</h2>
-            <ul>
-                <li>Data Analysis</li>
-                <li>Content Creation</li>
-                <li>SEO & SEM</li>
-                <li>Google & Meta Ads</li>
-                <li>Copywriting</li>
-                <li>Social Media Marketing</li>
-            </ul>
+            <p>Social Media Marketing, SEO, Content Creation, Google/Meta Ads, Copywriting, Email Marketing</p>
         </div>
         
         <div class="section">
             <h2>Sample Work</h2>
-            <div class="video-links">
-                <a href="https://youtube.com/shorts/zgCHNSFVbQM?feature=share" target="_blank">Video 1</a>
-                <a href="https://youtube.com/shorts/T1ikFPMQLFI?feature=share" target="_blank">Video 2</a>
-                <a href="https://youtube.com/shorts/_iOsfEkA4Q0?feature=share" target="_blank">Video 3</a>
-                <a href="https://youtube.com/shorts/F8a2dWEEeqs?feature=share" target="_blank">Video 4</a>
-                <a href="https://youtube.com/shorts/QInnQe3wnZo?si=-siVkdMdiVF3gDLt" target="_blank">Video 5</a>
+            <div class="video-gallery">
+                <a href="https://youtube.com/shorts/zgCHNSFVbQM?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/zgCHNSFVbQM/0.jpg" alt="Video 1">
+                </a>
+                <a href="https://youtube.com/shorts/T1ikFPMQLFI?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/T1ikFPMQLFI/0.jpg" alt="Video 2">
+                </a>
+                <a href="https://youtube.com/shorts/_iOsfEkA4Q0?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/_iOsfEkA4Q0/0.jpg" alt="Video 3">
+                </a>
+                <a href="https://youtube.com/shorts/F8a2dWEEeqs?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/F8a2dWEEeqs/0.jpg" alt="Video 4">
+                </a>
+                <a href="https://youtube.com/shorts/QInnQe3wnZo?si=-siVkdMdiVF3gDLt" target="_blank">
+                    <img src="https://img.youtube.com/vi/QInnQe3wnZo/0.jpg" alt="Video 5">
+                </a>
             </div>
         </div>
     </div>
