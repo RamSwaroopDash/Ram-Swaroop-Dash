@@ -262,3 +262,54 @@ header nav {
   margin-bottom: 10px;
 }
 
+/* Portfolio Section Styles */
+.portfolio {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.portfolio h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-item p {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  margin: 0;
+}
+
+.video-item a {
+  text-decoration: none;
+  color: inherit;
+}
