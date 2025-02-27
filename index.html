@@ -3,109 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ram Swaroop Dash - Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Ram Swaroop Dash - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/crumpled-paper.png');
             margin: 0;
-            padding: 0;
+            padding: 20px;
             text-align: center;
-            background-color: #f4f4f4;
         }
         .container {
-            max-width: 900px;
-            margin: 20px auto;
+            max-width: 800px;
+            margin: auto;
             background: white;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
+        h1, h2 {
             color: #333;
         }
-        .social-links a {
+        .social-icons a {
             margin: 10px;
-            font-size: 30px;
-            text-decoration: none;
+            display: inline-block;
         }
-        .social-links .fa-globe { color: black; }
-        .social-links .fa-linkedin { color: #0073e6; }
-        .social-links .fa-instagram { color: pink; }
-        .social-links a:hover {
-            opacity: 0.7;
+        .social-icons img {
+            width: 40px;
+            height: 40px;
         }
         .video-gallery img {
-            width: 250px;
+            width: 100px;
             height: auto;
-            margin: 15px;
-            cursor: pointer;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .video-gallery img:hover {
-            transform: scale(1.1);
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
             margin: 10px;
-            background-color: #0073e6;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
+            cursor: pointer;
         }
-        .btn:hover {
-            background-color: #005bb5;
+        .experience {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+        button {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Ram Swaroop Dash</h1>
-        <h3>Social Media Strategist</h3>
-        <p><strong>DOB:</strong> 23/05/1999 | <strong>Nationality:</strong> Indian</p>
-        <p><strong>Address:</strong> 817, BJB Nagar, Bhubaneswar 751014, India</p>
-        <p><strong>Phone:</strong> 08249108520 | <strong>Email:</strong> swaroopdash357@gmail.com</p>
-        
-        <div class="social-links">
-            <a href="https://foodcolumnist.wordpress.com/" target="_blank"><i class="fas fa-globe"></i></a>
-            <a href="https://www.linkedin.com/in/ramswaroopdash/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/food_columnist_/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <h2>Social Media Strategist</h2>
+        <p><strong>Email:</strong> swaroopdash357@gmail.com</p>
+        <p><strong>Phone:</strong> 08249108520</p>
+        <div class="social-icons">
+            <a href="https://foodcolumnist.wordpress.com/" target="_blank"><img src="website-icon.png" alt="Website"></a>
+            <a href="https://www.linkedin.com/in/ramswaroopdash/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/food_columnist_/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
         </div>
-        
-        <h2>Experience</h2>
-        <p><strong>ODM Educational Group</strong> - Social Media Executive (Dec 2023 - Present)</p>
-        <p>Developing organic growth strategies, innovative content creation, and audience engagement.</p>
-        <a href="#" class="btn" onclick="alert('Organic Growth Strategy: Develop and implement strategies specifically aimed at growing organic followers and engagement across social media platforms.\nInnovative Content Development: Create original, visually compelling, and brand-aligned content that resonates with the target audience to enhance reach and follower interaction.\nCommunity Building: Actively engage with followers, responding to comments and messages to foster a positive brand community and enhance brand loyalty.\nTrend Analysis & Adaptation: Stay current on social media trends and platform updates, adapting strategies to keep content fresh, relevant, and engaging.\nPerformance Monitoring & Adjustments: Track and analyze follower growth metrics and engagement rates, adjusting tactics to optimize organic growth continually.')">Read More</a>
-        
-        <p><strong>Limeli8</strong> - Brand Communication & Digital Marketing Executive (June 2023 - Dec 2023)</p>
-        <p>Led digital strategy development, content creation, and performance analysis.</p>
-        <a href="#" class="btn" onclick="alert('Digital Strategy Development: Led the creation and execution of Limeli8\'s comprehensive digital marketing strategy, encompassing social media, email, content, and SEO efforts.\nMulti-Channel Management: Oversee various digital marketing channels, optimizing performance across platforms such as Google Ads, Facebook, Instagram, and more.\nData-Driven Insights: Utilize strong analytical skills to interpret data and metrics, driving continuous improvement in digital marketing strategies and enhancing Limeli8\'s online presence.\nContent Creation: Develop engaging and high-quality content to support marketing initiatives, ensuring alignment with Limeli8\'s goals and target audience.\nCommunication & Collaboration: Effectively communicate digital marketing plans and progress to internal teams and stakeholders, collaborating to achieve common objectives.')">Read More</a>
-        
-        <p><strong>Food Columnist</strong> - Co-Admin (Oct 2021 - Present)</p>
-        <p>Grew social media following, executed branding strategies, and collaborated with major brands.</p>
-        <a href="#" class="btn" onclick="alert('Social media listening: Utilized well-developed social listening skills to craft valuable original content.\nContent writing: Wrote and published blog pieces regularly, according to client branding and with good SEO practices.\nSocial media marketing: Grew a social media following from 0 to 14.5k followers in just a year and more than 497 subscribers on YouTube within 4 months.\nBrand partnerships: Collaborated with more than 12 reputed brands like RedBull, Biriyani ByKilo, and Wow Momos to promote their sales.')">Read More</a>
-        
-        <h2>Education</h2>
-        <p>MBA (Marketing) - Jain University, Bangalore (2024 - Present)</p>
-        <p>B.Tech (Mechanical Engineering) - KIIT, Bhubaneswar (2017 - 2021)</p>
-        
-        <h2>Skills</h2>
-        <p>Social Media Marketing | SEO | Google/Meta Ads | Content Creation | Email Marketing | Copywriting</p>
-        
-        <h2>Technical Skills</h2>
-        <p>WordPress | HTML | Photoshop | Cinematography & Editing | Canva</p>
-        
         <h2>Sample Work</h2>
         <div class="video-gallery">
-            <a href="https://youtube.com/shorts/zgCHNSFVbQM?feature=share" target="_blank">
-                <img src="https://img.youtube.com/vi/zgCHNSFVbQM/0.jpg" alt="Video 1">
-            </a>
-            <a href="https://youtube.com/shorts/T1ikFPMQLFI?feature=share" target="_blank">
-                <img src="https://img.youtube.com/vi/T1ikFPMQLFI/0.jpg" alt="Video 2">
-            </a>
+            <a href="https://youtube.com/shorts/zgCHNSFVbQM?feature=share" target="_blank"><img src="thumbnail1.jpg" alt="Video 1"></a>
+            <a href="https://youtube.com/shorts/T1ikFPMQLFI?feature=share" target="_blank"><img src="thumbnail2.jpg" alt="Video 2"></a>
+            <a href="https://youtube.com/shorts/_iOsfEkA4Q0?feature=share" target="_blank"><img src="thumbnail3.jpg" alt="Video 3"></a>
+            <a href="https://youtube.com/shorts/F8a2dWEEeqs?feature=share" target="_blank"><img src="thumbnail4.jpg" alt="Video 4"></a>
+            <a href="https://youtube.com/shorts/QInnQe3wnZo?si=-siVkdMdiVF3gDLt" target="_blank"><img src="thumbnail5.jpg" alt="Video 5"></a>
+        </div>
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>ODM Educational Group, Bhubaneswar</h3>
+            <p>Social Media Executive-Digital Media & Branding</p>
+            <button onclick="toggleDetails('exp1')">Read More</button>
+            <div class="details" id="exp1">
+                <ul>
+                    <li>Develop and implement organic growth strategies.</li>
+                    <li>Create compelling, brand-aligned content.</li>
+                    <li>Engage with the online community.</li>
+                    <li>Analyze trends and optimize strategies.</li>
+                    <li>Monitor performance and adjust tactics.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience">
+            <h3>Limeli8, Bhubaneswar</h3>
+            <p>Brand Communication & Digital Marketing Executive</p>
+            <button onclick="toggleDetails('exp2')">Read More</button>
+            <div class="details" id="exp2">
+                <ul>
+                    <li>Led digital marketing strategy execution.</li>
+                    <li>Managed multi-channel campaigns.</li>
+                    <li>Analyzed performance data for optimization.</li>
+                    <li>Developed engaging content for branding.</li>
+                    <li>Collaborated with teams to drive goals.</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
