@@ -3,117 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ram Swaroop Dash - Portfolio</title>
+    <title>Ram Swaroop Dash - Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://www.transparenttextures.com/patterns/crumpled-paper.png');
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
-            padding: 20px;
-            text-align: center;
+            padding: 0;
         }
         .container {
-            max-width: 800px;
+            width: 80%;
             margin: auto;
-            background: white;
+            overflow: hidden;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
             padding: 20px;
+            background: white;
+            margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
-        }
-        .social-icons a {
-            margin: 10px;
-            display: inline-block;
-        }
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-        }
-        .video-gallery img {
-            width: 100px;
-            height: auto;
-            margin: 10px;
-            cursor: pointer;
-        }
-        .experience {
-            text-align: left;
+        .social-icons {
+            text-align: center;
             margin-top: 20px;
         }
-        .details {
-            display: none;
-            padding: 10px;
-            background: #f4f4f4;
-            border-radius: 5px;
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0077b6;
+            font-size: 24px;
         }
-        button {
-            background: #333;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video-gallery a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .video-gallery img {
+            width: 200px;
+            height: 120px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
         }
     </style>
-    <script>
-        function toggleDetails(id) {
-            var details = document.getElementById(id);
-            if (details.style.display === "none") {
-                details.style.display = "block";
-            } else {
-                details.style.display = "none";
-            }
-        }
-    </script>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Ram Swaroop Dash</h1>
-        <h2>Social Media Strategist</h2>
-        <p><strong>Email:</strong> swaroopdash357@gmail.com</p>
-        <p><strong>Phone:</strong> 08249108520</p>
+        <p>Social Media Strategist</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Social Media Executive with over 2 years of digital marketing expertise and 3+ years in content creation...</p>
+        </section>
+        <section>
+            <h2>My Work</h2>
+            <div class="video-gallery">
+                <a href="https://youtube.com/shorts/zgCHNSFVbQM?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/zgCHNSFVbQM/0.jpg" alt="Video 1">
+                </a>
+                <a href="https://youtube.com/shorts/T1ikFPMQLFI?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/T1ikFPMQLFI/0.jpg" alt="Video 2">
+                </a>
+                <a href="https://youtube.com/shorts/_iOsfEkA4Q0?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/_iOsfEkA4Q0/0.jpg" alt="Video 3">
+                </a>
+                <a href="https://youtube.com/shorts/F8a2dWEEeqs?feature=share" target="_blank">
+                    <img src="https://img.youtube.com/vi/F8a2dWEEeqs/0.jpg" alt="Video 4">
+                </a>
+                <a href="https://youtube.com/shorts/QInnQe3wnZo?si=-siVkdMdiVF3gDLt" target="_blank">
+                    <img src="https://img.youtube.com/vi/QInnQe3wnZo/0.jpg" alt="Video 5">
+                </a>
+            </div>
+        </section>
         <div class="social-icons">
-            <a href="https://foodcolumnist.wordpress.com/" target="_blank"><img src="website-icon.png" alt="Website"></a>
-            <a href="https://www.linkedin.com/in/ramswaroopdash/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/food_columnist_/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
-        <h2>Sample Work</h2>
-        <div class="video-gallery">
-            <a href="https://youtube.com/shorts/zgCHNSFVbQM?feature=share" target="_blank"><img src="thumbnail1.jpg" alt="Video 1"></a>
-            <a href="https://youtube.com/shorts/T1ikFPMQLFI?feature=share" target="_blank"><img src="thumbnail2.jpg" alt="Video 2"></a>
-            <a href="https://youtube.com/shorts/_iOsfEkA4Q0?feature=share" target="_blank"><img src="thumbnail3.jpg" alt="Video 3"></a>
-            <a href="https://youtube.com/shorts/F8a2dWEEeqs?feature=share" target="_blank"><img src="thumbnail4.jpg" alt="Video 4"></a>
-            <a href="https://youtube.com/shorts/QInnQe3wnZo?si=-siVkdMdiVF3gDLt" target="_blank"><img src="thumbnail5.jpg" alt="Video 5"></a>
-        </div>
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>ODM Educational Group, Bhubaneswar</h3>
-            <p>Social Media Executive-Digital Media & Branding</p>
-            <button onclick="toggleDetails('exp1')">Read More</button>
-            <div class="details" id="exp1">
-                <ul>
-                    <li>Develop and implement organic growth strategies.</li>
-                    <li>Create compelling, brand-aligned content.</li>
-                    <li>Engage with the online community.</li>
-                    <li>Analyze trends and optimize strategies.</li>
-                    <li>Monitor performance and adjust tactics.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="experience">
-            <h3>Limeli8, Bhubaneswar</h3>
-            <p>Brand Communication & Digital Marketing Executive</p>
-            <button onclick="toggleDetails('exp2')">Read More</button>
-            <div class="details" id="exp2">
-                <ul>
-                    <li>Led digital marketing strategy execution.</li>
-                    <li>Managed multi-channel campaigns.</li>
-                    <li>Analyzed performance data for optimization.</li>
-                    <li>Developed engaging content for branding.</li>
-                    <li>Collaborated with teams to drive goals.</li>
-                </ul>
-            </div>
+            <a href="https://foodcolumnist.wordpress.com/" target="_blank">🌐</a>
+            <a href="https://www.linkedin.com/in/ramswaroopdash/" target="_blank">🔗</a>
+            <a href="https://www.instagram.com/food_columnist_/" target="_blank">📸</a>
         </div>
     </div>
 </body>
