@@ -10,7 +10,10 @@
 <body>
   <header>
     <nav>
-      <ul>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -24,47 +27,18 @@
   <section class="portfolio">
     <div class="container">
       <h1>Portfolio</h1>
-
-      <!-- Video 1 -->
-      <div class="video-item">
-        <a href="https://youtube.com/shorts/zgCHNSFVbQM?feature=share" target="_blank">
-          <img src="https://img.youtube.com/vi/zgCHNSFVbQM/maxresdefault.jpg" alt="How Airports Earn Money in India">
-          <p>How Airports Earn Money in India | Sources of Money for the Airports | ODM Educational Group</p>
-        </a>
-      </div>
-
-      <!-- Video 2 -->
-      <div class="video-item">
-        <a href="https://youtube.com/shorts/T1ikFPMQLFI?feature=share" target="_blank">
-          <img src="https://img.youtube.com/vi/T1ikFPMQLFI/maxresdefault.jpg" alt="Understanding Earthquakes">
-          <p>Understanding Earthquakes: What Causes Them and How to Stay Safe #growwithodm</p>
-        </a>
-      </div>
-
-      <!-- Video 3 -->
-      <div class="video-item">
-        <a href="https://youtube.com/shorts/_iOsfEkA4Q0?feature=share" target="_blank">
-          <img src="https://img.youtube.com/vi/_iOsfEkA4Q0/maxresdefault.jpg" alt="Are you better than a 5th Grader?">
-          <p>Are you better than a 5th Grader? Quiz with ODMians | #growwithodm</p>
-        </a>
-      </div>
-
-      <!-- Video 4 -->
-      <div class="video-item">
-        <a href="https://youtube.com/shorts/F8a2dWEEeqs?feature=share" target="_blank">
-          <img src="https://img.youtube.com/vi/F8a2dWEEeqs/maxresdefault.jpg" alt="5 AI Tools for Students">
-          <p>5 AI Tools for Students ❗️ #growwithodm</p>
-        </a>
-      </div>
-
-      <!-- Video 5 -->
-      <div class="video-item">
-        <a href="https://youtube.com/shorts/QInnQe3wnZo?si=-siVkdMdiVF3gDLt" target="_blank">
-          <img src="https://img.youtube.com/vi/QInnQe3wnZo/maxresdefault.jpg" alt="Premium 3 Course Meals">
-          <p>Premium 3 Course Meals at your Doorstep in Bhubaneswar</p>
-        </a>
-      </div>
+      <!-- Your portfolio content here -->
     </div>
   </section>
+
+  <script>
+    // JavaScript for Hamburger Menu
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
